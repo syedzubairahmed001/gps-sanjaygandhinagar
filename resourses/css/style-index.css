@@ -1,0 +1,160 @@
+/*
+    blue color : #3b40f0
+    yellow color: #feca0c
+*/
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent !important;
+}
+
+/*_______header______*/
+header{
+    width: 100%;
+    height: 100vh;
+}
+.header-container-1{
+    height: 70vh;
+    background-image: url(img/Logopit_1532240054332.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.sec-header-main{
+    position: absolute;
+    top: 20%;
+    left: 90px;
+}
+h1{
+    text-transform: lowercase;
+    font-size: 70px;
+    color: #fff;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+h2{
+    margin-top: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+.sec-header-para-1{
+    color: #555;
+    font-size: 20px;
+    margin: 0 60px;
+    display: inline-block;
+}
+/* .sec-header-btn{
+    display: inline-block;
+    color: #fff;
+    background-color: #00a8ff;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 35px;
+}
+.sec-header-btn:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0077b3;
+} */
+.header-container-2{
+    height: 30vh;
+}
+.header-2-sec-1{
+    background-color: #fff;
+    height: 30vh;
+    padding: 30px 40px;
+}
+.header-2-sec-2{
+    background-color: #3b40f0;
+    height: 30vh;
+    padding: 30px 40px;
+}
+.sec-header-para-2{
+    color: #fff;
+    font-size: 20px;
+    display: inline-block;
+    font-weight: 300;
+}
+.sec-header-2-btn{
+    color: #3b40f0;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 40px;
+    box-shadow: 2px 4px 20px #555;
+}
+.sec-header-2-btn:hover{
+    text-decoration: none;
+    background-color: #ccc;
+}
+.sec-header-1-social-icon-container{
+    margin-left: 60px;
+    margin-top: 20px;
+}
+.sec-header-1-social-icon-container a{
+    color: #fff;
+    background-color: #3b40f0;
+    padding: 10px 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 2px 3px 15px #555;
+}
+.sec-header-1-social-icon-container a:hover{
+    background-color: #2e33c0;
+}
+/*__navigation__*/
+.menu-active{
+    background-color: #ccc;
+}
+.menu-icon{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+}
+.menu-icon img{
+    background-color: #3b40f0;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: #555 0 0 10px;
+}
+nav{
+    display: none;
+}
+nav ul{
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: #3b40f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #555;
+    z-index: 999;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #3b40f0;
+    text-decoration: none;
+    transform: scale(1.1);
+    box-shadow: 0 1px 20px #555;
+}
