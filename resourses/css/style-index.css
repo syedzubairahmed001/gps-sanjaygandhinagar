@@ -21,7 +21,7 @@ header{
 .header-container-1{
     height: 70vh;
     background-image: url(img/Logopit_1532240054332.jpg);
-    background-position: center;
+    background-position: right;
     background-size: cover;
     position: relative;
 }
@@ -99,6 +99,7 @@ h2{
 .sec-header-1-social-icon-container{
     margin-left: 60px;
     margin-top: 20px;
+    display: block;
 }
 .sec-header-1-social-icon-container a{
     color: #fff;
@@ -119,17 +120,16 @@ h2{
     position: fixed;
     top: 40px;
     right: 50px;
+    z-index: 99999;
 }
-.menu-icon img{
+#menu-icon-img{
     background-color: #3b40f0;
     padding: 10px;
     border-radius: 50%;
     box-shadow: #555 0 0 10px;
 }
-nav{
-    display: none;
-}
 nav ul{
+    display: none;
     position: fixed;
     top: 100px;
     right: 50px;
@@ -150,6 +150,7 @@ nav ul li a{
     display: inline-block;
     width: 150px;
     text-align: center;
+    transition: all 0.3s;
 }
 nav ul li a:hover{
     background-color: #fff;
@@ -157,4 +158,50 @@ nav ul li a:hover{
     text-decoration: none;
     transform: scale(1.1);
     box-shadow: 0 1px 20px #555;
+}
+/*_____section-features______*/
+.section-features{
+    background-color: #eee;
+    padding: 30px 0;
+}
+.sec-features-col-1,
+.sec-features-col-2,
+.sec-features-col-3,
+.sec-features-col-4{
+    background-color: #fff;
+    margin: 20px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px #aaa;
+}
+.sec-features-col-1 p,
+.sec-features-col-2 p,
+.sec-features-col-3 p,
+.sec-features-col-4 p{
+    color: #555;
+}
+.sec-features-col-1 i,
+.sec-features-col-2 i,
+.sec-features-col-3 i,
+.sec-features-col-4 i{
+    color: #fff;
+    padding: 20px;
+    font-size: 20px;
+    background-color: #3b40f0;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.sec-features-col-1 i{
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: #E53935;
+}
+.sec-features-col-2 i{
+    background-color: #1E88E5;
+}
+.sec-features-col-3 i{
+    background-color: #8E24AA;
+}
+.sec-features-col-4 i{
+    background-color: #FB8C00;
 }

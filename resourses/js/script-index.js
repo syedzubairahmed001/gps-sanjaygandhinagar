@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $('.menu-icon img').click(function (){
-        $('nav').slideDown();
+    $('.menu-icon').click(function(e){
+        $('nav ul').slideToggle();
+        e.preventDefault();
     })
 })
