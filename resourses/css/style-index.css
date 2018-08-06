@@ -49,7 +49,7 @@ header{
 h1{
     text-transform: lowercase;
     font-size: 70px;
-    color: #444;
+    color: #fff;
     word-spacing: 2px;
     letter-spacing: 1px;
     font-weight: 900;
@@ -57,7 +57,7 @@ h1{
 h2{
     margin-top: 20px;
     text-transform: uppercase;
-    color: #444;
+    color: #fff;
     word-spacing: 2px;
     letter-spacing: 1px;
     font-weight: 400;
@@ -80,19 +80,19 @@ h2{
     height: 30vh;
 }
 .header-2-sec-1{
-    background-color: #333;
+    background-color: #fff;
     height: 30vh;
     padding: 30px 40px;
     /* border-bottom: 6px solid #3b40f0; */
 }
 .header-2-sec-2{
-    background-color: #E53935;
+    background-color: #272eee;
     height: 30vh;
     padding: 30px 40px;
     /* border-bottom: 6px solid #3b40f0; */
 }
 .sec-header-para-1{
-    color: #fff;
+    color: #333;
     font-size: 20px;
     margin: 0 60px;
     display: inline-block;
@@ -123,14 +123,14 @@ h2{
 }
 .sec-header-1-social-icon-container a{
     color: #fff;
-    background-color: #00a8ff;
+    background-color: #272eee;
     padding: 10px 15px;
     border-radius: 50%;
     margin-right: 10px;
     box-shadow: 2px 3px 15px rgba(161, 161, 161, 0.342);
 }
 .sec-header-1-social-icon-container a:hover{
-    background-color: #E53935;
+    background-color: #1a20c5;
 }
 /*__navigation__*/
 .menu-active{
@@ -143,7 +143,7 @@ h2{
     z-index: 99999;
 }
 #menu-icon-img{
-    background-color: #333;
+    background-color: #272eee;
     padding: 10px;
     border-radius: 50%;
     box-shadow: 0 0 20px rgba(105, 105, 105, 0.75);
@@ -154,7 +154,7 @@ nav ul{
     position: fixed;
     top: 100px;
     right: 50px;
-    background-color: #333;
+    background-color: #272eee;
     border-radius: 10px;
     box-shadow: 0 0 10px #555;
     z-index: 999;
@@ -175,12 +175,70 @@ nav ul li a{
 }
 nav ul li a:hover{
     background-color: #fff;
-    color: #333;
+    color: #272eee;
     text-decoration: none;
     transform: scale(1.1);
     box-shadow: 0 1px 20px #555;
 }
-/*_____section-features______*/
+/*_______________________section about___________________________*/
+.section-about{
+    background-color: #141414;
+    padding: 40px;
+}
+.sec-about-h3{
+    color: #272eee;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.sec-about-h3 span{
+    color: rgba(39, 46, 238, 0.15);
+    font-size: 50px;
+}
+.sec-about-col-1{
+    position: relative;
+}
+.sec-about-icon-1{
+    color: #272eee;
+    padding: 30px 45px;
+    background-color: #eee;
+    font-size: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec-about-col-1 span{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgba(39, 46, 238, 0.5);
+    animation: icon-animate 7s infinite;
+    border-radius: 50%;
+}
+.sec-about-btn-1{
+    display: inline-block;
+    color: #fff;
+    background-color: #272eee;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.sec-about-btn-1:hover{
+    color: #fff;
+    background-color: #1a20c5;
+    text-decoration: none;
+}
+.sec-about-para-1{
+    color: #ccc;
+    font-size: 25px;
+    font-weight: 300;
+}
+/*_________________section-features_____________________*/
 .section-features{
     background-color: #fff;
     padding: 30px 0;
@@ -226,18 +284,16 @@ nav ul li a:hover{
 .sec-features-col-4 i{
     background-color: #fbc531;
 }
-/*_______________________section about___________________________*/
-.section-about{
-    background-color: #fff;
-    padding: 70px 30px;
-}
-.sec-about-h3{
-    color: #e53835;
-}
-.sec-about-h3 span{
-    color: rgba(229, 56, 53, 0.15);
-}
-.sec-about-para-1{
-    font-size: 25px;
-    font-weight: 300;
+
+@keyframes icon-animate{
+    0%{
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+    }
+    100%{
+        width: 250px;
+        height: 250px;
+        opacity: 0;
+    }
 }
