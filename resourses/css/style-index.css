@@ -17,11 +17,12 @@ h3{
     font-size: 40px;
     text-transform: uppercase;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    margin-top: 10px;
 }
 h3 span{
     font-weight: 800;
-    font-size: 70px;
+    font-size: 50px;
     position: absolute;
     left: 0;
     top: -15px;
@@ -182,25 +183,31 @@ nav ul li a:hover{
 }
 /*_______________________section about___________________________*/
 .section-about{
-    background-color: #141414;
+    background-color: #fff;
     padding: 40px;
 }
 .sec-about-h3{
-    color: #272eee;
+    color: #feca0c;
     margin-bottom: 20px;
     margin-top: 10px;
 }
 .sec-about-h3 span{
-    color: rgba(39, 46, 238, 0.15);
+    color: rgba(254, 202, 12, 0.15);
     font-size: 50px;
+}
+.sec-about-para-1{
+    color: #555;
+    font-size: 25px;
+    font-weight: 300;
 }
 .sec-about-col-1{
     position: relative;
 }
 .sec-about-icon-1{
-    color: #272eee;
+    color: #feca0c;
     padding: 30px 45px;
-    background-color: #eee;
+    background-color: #fff;
+    box-shadow: 0 0 60px rgba(177, 177, 177, 0.3);
     font-size: 50px;
     border-radius: 50%;
     position: absolute;
@@ -216,11 +223,70 @@ nav ul li a:hover{
     transform: translate(-50%,-50%);
     width: 10px;
     height: 10px;
-    background-color: rgba(39, 46, 238, 0.5);
+    background-color: rgba(254, 202, 12, 0.5);
     animation: icon-animate 7s infinite;
     border-radius: 50%;
 }
 .sec-about-btn-1{
+    display: inline-block;
+    color: #fff;
+    background-color: #feca0c;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.sec-about-btn-1:hover{
+    color: #fff;
+    background-color: #d6a906;
+    text-decoration: none;
+}
+/*____________section directions_____________*/
+.section-directions{
+    background-color: #fff;
+    padding: 40px;
+}
+.sec-dir-h3{
+    color: #272eee;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.sec-dir-h3 span{
+    color: rgba(39, 46, 238, 0.15);
+    font-size: 50px;
+}
+.sec-dir-para-1{
+    color: #555;
+    font-size: 25px;
+    font-weight: 300;
+}
+.sec-dir-col-2{
+    position: relative;
+}
+.sec-dir-icon-1{
+    color: #272eee;
+    padding: 30px 40px;
+    background-color: #fff;
+    box-shadow: 0 0 60px rgba(177, 177, 177, 0.3);
+    font-size: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.sec-dir-col-2 span{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    background-color: rgba(39, 46, 238, 0.5);
+    animation: icon-animate 7s infinite;
+    border-radius: 50%;
+}
+.sec-dir-btn-1{
     display: inline-block;
     color: #fff;
     background-color: #272eee;
@@ -228,20 +294,18 @@ nav ul li a:hover{
     border-radius: 20px;
     margin-top: 10px;
 }
-.sec-about-btn-1:hover{
+.sec-dir-btn-1:hover{
     color: #fff;
     background-color: #1a20c5;
     text-decoration: none;
 }
-.sec-about-para-1{
-    color: #ccc;
-    font-size: 25px;
-    font-weight: 300;
-}
 /*_________________section-features_____________________*/
 .section-features{
     background-color: #fff;
-    padding: 30px 0;
+    padding: 40px 0;
+}
+.sec-feat-h3{
+    color: #666;
 }
 .sec-features-col-1,
 .sec-features-col-2,
@@ -251,7 +315,7 @@ nav ul li a:hover{
     margin: 20px 0px;
     padding: 20px;
     border-radius: 13px;
-    box-shadow: 0px 4px 30px 2px #ddd;
+    box-shadow: 0 0 30px rgba(177, 177, 177, 0.3);
 }
 .sec-features-col-1 p,
 .sec-features-col-2 p,
