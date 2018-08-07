@@ -311,17 +311,19 @@ nav ul li a:hover{
 .sec-features-col-2,
 .sec-features-col-3,
 .sec-features-col-4{
-    background-color: #fff;
+    background-color: #3b40f0;
     margin: 20px 0px;
     padding: 20px;
     border-radius: 13px;
-    box-shadow: 0 0 30px rgba(177, 177, 177, 0.3);
+    box-shadow: 0 0 30px rgb(177, 177, 177);
 }
 .sec-features-col-1 p,
 .sec-features-col-2 p,
 .sec-features-col-3 p,
 .sec-features-col-4 p{
-    color: #555;
+    color: #fff;
+    font-weight: 300;
+    font-size: 19px;
 }
 .sec-features-col-1 i,
 .sec-features-col-2 i,
@@ -337,16 +339,16 @@ nav ul li a:hover{
 .sec-features-col-1 i{
     padding-left: 25px;
     padding-right: 25px;
-    background-color: #E53935;
+    background-color: #feca0c;
 }
 .sec-features-col-2 i{
-    background-color: #00a8ff;
+    background-color: #feca0c;
 }
 .sec-features-col-3 i{
-    background-color: #8E24AA;
+    background-color: #feca0c;
 }
 .sec-features-col-4 i{
-    background-color: #fbc531;
+    background-color: #feca0c;
 }
 
 @keyframes icon-animate{
