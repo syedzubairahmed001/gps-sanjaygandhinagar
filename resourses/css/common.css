@@ -1,0 +1,77 @@
+/*
+    blue color : #3b40f0
+    yellow color: #feca0c
+*/
+::selection{
+    background-color: #272eee;
+    color: #fff;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+*{
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent !important;
+}
+/*__navigation__*/
+.menu-icon{
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 99999;
+}
+.menu-icon-img{
+    background-color: #272eee;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(105, 105, 105, 0.75);
+    width: 50px;
+}
+nav ul{
+    display: none;
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    background-color: #272eee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #555;
+    z-index: 999;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a{
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    transition: all 0.3s;
+}
+nav ul li a:hover{
+    background-color: #fff;
+    color: #272eee;
+    text-decoration: none;
+    transform: scale(1.1);
+    box-shadow: 0 1px 20px #555;
+}
+.menu-active{
+    background-color: #ccc;
+}
+
+/*________media queries___________*/
+@media only screen and (max-width:600px){
+    .menu-icon{
+        top: 30px;
+        right: 20px;
+    }
+    nav ul{
+        right: 20px;
+    }
+}
