@@ -3,7 +3,7 @@
     yellow color: #feca0c
 */
 ::selection{
-    background-color: #272eee;
+    background-color: rgba(59, 65, 240, 0.952);
     color: #fff;
 }
 body{
