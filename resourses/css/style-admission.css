@@ -114,3 +114,41 @@ input[type=submit]:focus{
 input[type=submit]:hover{
     background-color: #3b40f0;
 }
+/*________media queries_____*/
+@media only screen and (max-width:600px){
+    .main-col-1{
+        padding: 30px;
+    }
+    .main-col-2{
+        padding: 30px;
+        height: 100vh;
+        background-color: #fff;
+    }
+    /*_________col-1________*/
+    h1{
+        font-size: 40px;
+        margin-top: 40px;
+    }
+    h2{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    h2 ol{
+        padding-left: 40px;
+    }
+    .btn-container{
+        margin-left: 20px;;
+    }
+    .call-btn{
+        font-size: 15px;
+    }
+    .download-btn{
+        font-size: 15px;
+    }
+    /*col-2*/
+    form{
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+}
