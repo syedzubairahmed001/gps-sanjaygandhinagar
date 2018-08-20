@@ -71,6 +71,7 @@ h2{
 .sec-header-para-1{
     color: #333;
     font-size: 20px;
+    font-weight: 300;
     margin: 0 60px;
     display: inline-block;
 }
@@ -191,6 +192,21 @@ h2{
     padding: 20px;
     border-radius: 13px;
     box-shadow: 0 0 35px rgba(177, 177, 177, 0.25);
+    transition: transform 0.3s, background-color 0.3s;
+}
+.sec-features-col-1:hover,
+.sec-features-col-2:hover,
+.sec-features-col-3:hover,
+.sec-features-col-4:hover{
+    transform: scale(1.1);
+    background-color: #fcfcfc;
+}
+.sec-features-col-1:hover i,
+.sec-features-col-2:hover i,
+.sec-features-col-3:hover i,
+.sec-features-col-4:hover i{
+    background-color: #feca0c;
+    color: #fff;
 }
 .sec-features-col-1 p,
 .sec-features-col-2 p,
@@ -211,6 +227,7 @@ h2{
     border-radius: 50%;
     margin-bottom: 20px;
     box-shadow: 0px 0px 30px rgba(177, 177, 177, 0.4);
+    transition: color 0.5s, background-color 0.5s;
 }
 .sec-features-col-1 i{
     padding-left: 25px;
@@ -363,7 +380,119 @@ h2{
 .sec-apply-btn-2{
     background-color: #feca0c;
 }
-/*______animations_______*/
+/*__________________________________section message____________________________*/
+.section-message{
+    background-color: #fff;
+    margin-top: 50px;
+}
+.sec-message-container{
+    margin: 0 40px;
+}
+.sec-message-h3{
+    color: #272eee;
+}
+.sec-message-h3 span{
+    color: rgba(39, 46, 238, 0.15);
+    font-size: 50px;
+}
+.sec-message-icon{
+    font-size: 40px;
+    color: rgba(39, 46, 238, 0.472);
+}
+.sec-message-para{
+    font-size: 25px;
+    font-weight: 300;
+    text-indent: 55px;
+}
+.sec-message-img{
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 50px;
+}
+.principal-info-container{
+    display: inline-block;
+    margin-left: 20px;
+}
+.principal-name{
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #555;
+}
+.principal-qualification{
+    display: block;
+    margin: 0;
+    font-size: 15px;
+    color: #666;
+}
+/*__________________________________section message____________________________*/
+.section-info{
+    background-color: #272eee;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+.sec-info-link-1,
+.sec-info-link-2,
+.sec-info-link-3{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    margin: 20px;
+    font-weight: 300;
+}
+.sec-info-link-1:hover,
+.sec-info-link-2:hover,
+.sec-info-link-3:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.sec-info-link-1 i,
+.sec-info-link-2 i,
+.sec-info-link-3 i{
+    font-size: 25px;
+    padding: 17px;
+    background-color: #fff;
+    color: #272eee;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.sec-info-link-1:hover i,
+.sec-info-link-2:hover i,
+.sec-info-link-3:hover i{
+    color: #fff;
+    background-color: #feca0c;
+}
+.sec-info-link-1 i{
+    padding: 17px 22px;
+}
+.sec-info-link-3 i{
+    padding: 17px 20px;
+}
+/*__________________________________animations____________________________*/
+footer{
+    border-top: 2px solid #feca0c;
+    background-color: #1a20c5;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+    display: inline-block;
+    color: #aaa;
+}
+footer p i{
+    color: #F03434;
+}
+footer p a{
+    color: #aaa;
+}
+footer p a:hover{
+    color: #aaa;
+}
+/*__________________________________animations____________________________*/
 @keyframes icon-animate{
     0%{
         width: 100px;
@@ -376,7 +505,7 @@ h2{
         opacity: 0;
     }
 }
-/*________________________________media queries______________________________*/
+/*________________________________media queries____________________________*/
 @media only screen and (max-width:600px){
     /*____common___*/
     h3{
