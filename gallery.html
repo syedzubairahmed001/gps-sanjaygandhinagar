@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="vendors/css/imagelightbox.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
     <link rel="stylesheet" href="resourses/css/common.css">
@@ -29,22 +30,30 @@
                 <div class="row gallery-row">
                     <div class="col-6 col-sm-6 col-lg-3 col-md-6">
                         <div class="img-container">
-                            <img class="img" src="resourses/img/img-1.jpg" alt="img">
+                            <a href="resourses/img/img-1.jpg" data-imagelightbox="demo">
+                                <img class="img" src="resourses/img/img-1.jpg" alt="img">
+                            </a>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-lg-3 col-md-6">
                         <div class="img-container">
-                            <img class="img" src="resourses/img/img-2.jpg" alt="img">
+                                <a href="resourses/img/img-2.jpg" data-imagelightbox="demo">
+                                <img class="img" src="resourses/img/img-2.jpg" alt="img">
+                            </a>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-lg-3 col-md-6">
                         <div class="img-container">
-                            <img class="img" src="resourses/img/img-3.jpg" alt="img">
+                                <a href="resourses/img/img-3.jpg" data-imagelightbox="demo">
+                                <img class="img" src="resourses/img/img-3.jpg" alt="img">
+                            </a>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-lg-3 col-md-6">
                         <div class="img-container">
-                            <img class="img" src="resourses/img/img-4.jpg" alt="img">
+                            <a href="resourses/img/img-4.jpg" data-imagelightbox="demo">
+                                <img class="img" src="resourses/img/img-4.jpg" alt="img">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -82,5 +91,27 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
     <script src="resourses/js/script-common.js"></script>
+    <script src="vendors/js/imagelightbox.js"></script>
+    <script>
+        $('a[data-imagelightbox="demo"]').imageLightbox({
+        selector:       'a[data-imagelightbox]',
+        id:             'imagelightbox',
+        allowedTypes:   'png|jpg|jpeg|gif',
+        animationSpeed: 250,
+        activity:       true,
+        arrows:         true,
+        button:         true,
+        caption:        false,
+        enableKeyboard: true,
+        lockBody:       false,
+        navigation:     true,
+        overlay:        true,
+        preloadNext:    true,
+        quitOnEnd:      false,
+        quitOnImgClick: true,
+        quitOnDocClick: true,
+        quitOnEscKey:   true
+    });
+    </script>
 </body>
 </html>
