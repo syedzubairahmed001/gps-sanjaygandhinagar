@@ -2,25 +2,6 @@
     blue color : #3b40f0
     yellow color: #feca0c
 */
-/*common*/
-h3{
-    font-weight: 900;
-    font-size: 40px;
-    text-transform: uppercase;
-    position: relative;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-h3 span{
-    font-weight: 800;
-    font-size: 50px;
-    position: absolute;
-    left: 0;
-    top: -15px;
-    color: rgba(53, 53, 53, 0.15);
-    pointer-events: none;
-    overflow-wrap: break-word;
-}
 /*_______header______*/
 header{
     width: 100%;

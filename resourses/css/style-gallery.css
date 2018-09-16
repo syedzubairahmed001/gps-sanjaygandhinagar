@@ -1,0 +1,28 @@
+h3{
+    margin-top: 50px;
+    margin-left: 15px;
+    color: #272eee;
+}
+h3 span{
+    color: rgba(39, 46, 238, 0.15);
+}
+.img-container{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(85, 85, 85, 0.623);
+    margin: 20px 10px;
+}
+.img-container .img{
+    width: 100%;
+    border-radius: 10px;
+
+}
+@media only screen and (max-width:600px){
+    .gallery-row{
+        margin: 0 10px;
+    }
+    .img-container{
+        margin: 10px 0;
+    }
+}
